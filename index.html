@@ -1,41 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="cupcake">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fruit Burst</title>
-    <!-- Lato google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fruit Burst</title>
+  <!-- Lato google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
 
-    <!-- Tailwind and Daisy ui cdn -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!--  Fontawesome -->
-    <script src="https://kit.fontawesome.com/e78e88938c.js" crossorigin="anonymous"></script>
+  <!-- Tailwind and Daisy ui cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Tailwind config -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        clifford: '#da373d',
-                    }
-                }
-            }
+  <!--  Fontawesome -->
+  <script src="https://kit.fontawesome.com/e78e88938c.js" crossorigin="anonymous"></script>
+
+  <!-- Tailwind custom use-->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
         }
-    </script>
+      }
+    }
+  </script>
 
-    <style>
-        .font-lato{
-            font-family: 'Lato', sans-serif;
-        }
-
-    </style>
+  <style>
+    .font-lato {
+      font-family: 'Lato', sans-serif;
+    }
+  </style>
 
 
 
@@ -43,13 +42,368 @@
 
 <body class=" font-lato">
 
-    <header></header>
-    <main></main>
-    <footer></footer>
+  <!-- Header Section -->
+
+  <header class="container mx-auto mb-20 ">
+    <nav class="bg-[#F85559] my-5 px-8 py-3 rounded-full md:px-16 lg:px-24">
+      <div class="navbar ">
+        <div class="navbar-start ">
+          <ul class="flex items-center font-semibold space-x-5 text-white">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">All Fruits</a></li>
+          </ul>
+        </div>
+        <div class="navbar-center">
+          <a class="normal-case text-2xl font-bold">
+            <div class="flex items-center space-x-4">
+              <img src="./images/logo.png" alt="logo">
+              <h1>Fruits Burst </h1>
+            </div>
+          </a>
+        </div>
+        <div class="navbar-end">
+          <div>
+            <button class="btn btn-wide rounded-full capitalize gap-20">Search Here<i
+                class="fas fa-search"></i></button>
+          </div>
+
+        </div>
+      </div>
+
+    </nav>
+
+
+    <!-- Hero Section -->
+
+    <div class="carousel w-full">
+
+      <!-- slide1 -->
+      <div id="slide1" class="carousel-item relative w-full">
+        <div class="absolute mx-96 text-center py-10 text-white">
+          <h2 class="text-5xl font-extrabold">Exotic tastes at your <br> doorstep</h2>
+          <p class="text-lg my-3">We supply high quality organic products</p>
+          <button class="btn btn-error text-white">Shop Now</button>
+        </div>
+        <div class="">
+          <img src="/images/banner1.png" class="w-full" />
+        </div>
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide4" class="btn btn-circle">❮</a>
+          <a href="#slide2" class="btn btn-circle">❯</a>
+
+        </div>
+      </div>
+
+      <!-- slide2 -->
+      <div id="slide2" class="carousel-item relative w-full">
+        <div class="absolute mx-96 text-center py-10 text-white">
+          <h2 class="text-5xl font-extrabold">Exotic tastes at your <br> doorstep</h2>
+          <p class="text-lg my-3">We supply high quality organic products</p>
+          <button class="btn btn-error text-white">Shop Now</button>
+        </div>
+        <div class="">
+          <img src="/images/banner2.png" class="w-full" />
+        </div>
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide1" class="btn btn-circle">❮</a>
+          <a href="#slide3" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <!-- slide3 -->
+      <div id="slide3" class="carousel-item relative w-full">
+        <div class="absolute mx-96 text-center py-10 text-white">
+          <h2 class="text-5xl font-extrabold">Exotic tastes at your <br> doorstep</h2>
+          <p class="text-lg my-3">We supply high quality organic products</p>
+          <button class="btn btn-error text-white">Shop Now</button>
+        </div>
+        <div class="">
+          <img src="/images/banner3.png" class="w-full" />
+        </div>
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide2" class="btn btn-circle">❮</a>
+          <a href="#slide4" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <!-- slide4 -->
+      <div id="slide4" class="carousel-item relative w-full">
+        <div class="absolute mx-96 text-center py-10 text-white">
+          <h2 class="text-5xl font-extrabold">Exotic tastes at your <br> doorstep</h2>
+          <p class="text-lg my-3">We supply high quality organic products</p>
+          <button class="btn btn-error text-white">Shop Now</button>
+        </div>
+        <div class="">
+          <img src="/images/banner4.png" class="w-full" />
+        </div>
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide3" class="btn btn-circle">❮</a>
+          <a href="#slide1" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+    </div>
+
+    </div>
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+    <div class="relative">
+      <div class="bg-white drop-shadow-lg max-w-screen-sm shadow-sm ml-96 absolute -bottom-12">
+        <ul class="flex">
+          <li><img src="/images/fruit1.png" alt="">Grapes</li>
+          <li><img src="/images/fruit2.png" alt="">Orange</li>
+          <li><img src="/images/fruit3.png" alt="">Mango</li>
+          <li><img src="/images/fruit4.png" alt="">strawberry</li>
+          <li><img src="/images/fruit5.png" alt="">promegranate</li>
+        </ul>
+      </div>
+    </div>
+
+
+  </header>
+  <main class="container mx-auto">
+
+    <!-- Deal of the day Section -->
+    <section class="py-10">
+      <div class="flex justify-between">
+        <div class="my-4">
+          <h3 class="text-3xl font-extrabold">Deal of the day</h3>
+          <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin
+            literature from 45 BC, making it over 2000 years old.</p>
+        </div>
+        <!-- count down -->
+
+        <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-5xl">
+              <span style="--value:15;"></span>
+            </span>
+            days
+          </div>
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-5xl">
+              <span style="--value:10;"></span>
+            </span>
+            hours
+          </div>
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-5xl">
+              <span style="--value:24;"></span>
+            </span>
+            min
+          </div>
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-5xl">
+              <span style="--value:13;"></span>
+            </span>
+            sec
+          </div>
+        </div>
+      </div>
+      <!-- Fruits card -->
+      
+      <div class="grid  gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        <div class="card w-85 h-120 bg-base-100 shadow-xl">
+          <figure class="px-10 pt-10">
+            <img src="/images/fruit6.png" alt="fruit" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">12.90$ - 18.85$</h2>
+            <hr>
+            <p class="text-gray-400">Apples</p>
+            <p class="text-red-700">Details</p>
+            
+          </div>
+        </div>  
+        <div class="card w-85 h-120 bg-base-100 shadow-xl">
+          <figure class="px-10 pt-10">
+            <img src="/images/fruit7.png" alt="fruit" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">12.90$ - 18.85$</h2>
+            <hr>
+            <p class="text-gray-400">Orange</p>
+            <p class="text-red-700">Details</p>
+            
+          </div>
+        </div>  
+        <div class="card w-85 h-120 bg-base-100 shadow-xl">
+          <figure class="px-10 pt-10">
+            <img src="/images/fruit8.png" alt="fruit" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">12.90$ - 18.85$</h2>
+            <hr>
+            <p class="text-gray-400">Red Dragon</p>
+            <p class="text-red-700">Details</p>
+            
+          </div>
+        </div>  
+        <div class="card w-85 h-120 bg-base-100 shadow-xl">
+          <figure class="px-10 pt-10">
+            <img src="/images/fruit9.png" alt="fruit" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">12.90$ - 18.85$</h2>
+            <hr>
+            <p class="text-gray-400">Banana</p>
+            <p class="text-red-700">Details</p>
+            
+          </div>
+        </div>  
+      </div>
+      <div class="max-w-4xl mx-auto my-5 ">
+        <button class="bg-red-600 p-2 rounded-sm ml-96">Shop All</button>
+      </div>
+    <section>
+
+    <!-- Team section -->
+
+
+    <section class="">
+      <div class="hero min-h-screen" style="background-image: url(./images/team.png);">
+        <div class="hero-overlay bg-opacity-0"></div>
+        <div class="hero-content text-center text-neutral-content">
+          <div class="max-w-md">
+            <h1 class="mb-5 text-4xl font-bold">Meet The Team Section</h1>
+            <p class="mb-5 text-xs">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 ">
+              <div class="max-w-xs">
+                <img src="/images/member1.png" alt="photo">
+                <h2 class="text-sm font-extrabold text-white">Awlad Hussain</h2>
+                <p class="text-xs  text-white">Fruits Expert</p>
+      
+                <ul class="flex gap-4 text-white ">
+                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+      
+              </div>
+              <div>
+                <img src="/images/member2.png" alt="photo">
+                <h2 class="text-sm font-extrabold text-white">Safia Ch.</h2>
+                <p class="text-xs font-normal text-white">Fruits Expert</p>
+      
+                <ul class="flex gap-4 text-white ">
+                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+      
+              </div>
+              <div>
+                <img src="/images/member3.png" alt="photo">
+                <h2 class="text-sm font-extrabold text-white">Rokib Hasan</h2>
+                <p class="text-xs font-normal text-white">Fruits Expert</p>
+      
+                <ul class="flex gap-4 text-white ">
+                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+      
+              </div>
+              <div>
+                <img src="/images/member4.png" alt="photo">
+                <h2 class="text-sm font-extrabold text-white">Choity</h2>
+                <p class="text-xs font-normal text-white">Fruits Expert</p>
+      
+                <ul class="flex gap-4 text-white ">
+                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+              
+      
+  </main>
+  <footer>
+    <footer class="footer footer-center p-10 bg-black text-base-content rounded">
+      <div class="flex items-center">
+        <img src="/images/logo.png" alt="logo">
+        <h3 class="text-white text-2xl">Fruits Burst</h3>
+      </div>
+      <div class="grid grid-flow-col text-white gap-5">
+        <a class="link link-hover">Home</a>
+        <a class="link link-hover">About Us</a>
+        <a class="link link-hover">Shop</a>
+        <a class="link link-hover">Support</a>
+        <a class="link link-hover">Contact</a>
+      </div>
+      <div>
+        <div class="grid grid-flow-col text-white gap-4">
+          <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+              <path
+                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+              </path>
+            </svg></a>
+          <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+              <path
+                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+              </path>
+            </svg></a>
+          <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+              <path
+                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+              </path>
+            </svg></a>
+          <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 41 40" fill="none">
+              <path
+                d="M36.1217 36V35.9988H36.1297V24.2628C36.1297 18.5216 34.8937 14.0988 28.1817 14.0988C24.9549 14.0988 22.7897 15.8696 21.9057 17.548H21.8125V14.6348H15.4485V35.9988H22.0753V25.42C22.0753 22.6348 22.6033 19.9412 26.0525 19.9412C29.4513 19.9412 29.5017 23.12 29.5017 25.5984V36H36.1217Z"
+                fill="white" />
+              <path d="M4.65771 14.636H11.2925V36H4.65771V14.636Z" fill="white" />
+              <path
+                d="M7.97244 4C5.85084 4 4.12964 5.7212 4.12964 7.8428C4.12964 9.9644 5.85084 11.7216 7.97244 11.7216C10.094 11.7216 11.8152 9.9644 11.8152 7.8428C11.8136 5.7212 10.0924 4 7.97244 4Z"
+                fill="white" />
+            </svg></path></svg></a>
+          <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 41 40" fill="none">
+              <g clip-path="url(#clip0_13_2392)">
+                <path
+                  d="M40.0906 11.7601C39.9968 9.63476 39.6532 8.17359 39.1608 6.90748C38.6529 5.56353 37.8715 4.36029 36.8477 3.36003C35.8475 2.34421 34.6363 1.55487 33.3079 1.05489C32.0345 0.562549 30.5809 0.218854 28.4556 0.125146C26.3144 0.0235031 25.6346 0 20.2039 0C14.7731 0 14.0934 0.0235031 11.9601 0.11721C9.83471 0.210918 8.37354 0.554918 7.10773 1.04696C5.76348 1.55487 4.56024 2.33627 3.55998 3.36003C2.54416 4.36029 1.75513 5.57146 1.25484 6.89985C0.7625 8.17359 0.418805 9.62682 0.325098 11.7522C0.223454 13.8934 0.199951 14.5732 0.199951 20.0039C0.199951 25.4347 0.223454 26.1144 0.317162 28.2477C0.410869 30.3731 0.754869 31.8342 1.24721 33.1003C1.75513 34.4443 2.54416 35.6475 3.55998 36.6478C4.56024 37.6636 5.77141 38.4529 7.0998 38.9529C8.37354 39.4453 9.82677 39.789 11.9524 39.8827C14.0854 39.9767 14.7655 39.9999 20.1962 39.9999C25.627 39.9999 26.3067 39.9767 28.44 39.8827C30.5654 39.789 32.0265 39.4453 33.2924 38.9529C35.9806 37.9136 38.1059 35.7882 39.1452 33.1003C39.6373 31.8266 39.9813 30.3731 40.075 28.2477C40.1687 26.1144 40.1922 25.4347 40.1922 20.0039C40.1922 14.5732 40.1843 13.8934 40.0906 11.7601ZM36.4885 28.0914C36.4024 30.0449 36.0743 31.0998 35.8008 31.8031C35.1287 33.5457 33.7456 34.9287 32.003 35.6008C31.2998 35.8743 30.2373 36.2024 28.2914 36.2882C26.1816 36.3822 25.5488 36.4054 20.2118 36.4054C14.8748 36.4054 14.2341 36.3822 12.1319 36.2882C10.1784 36.2024 9.12351 35.8743 8.42025 35.6008C7.55307 35.2803 6.76373 34.7724 6.12304 34.1082C5.45885 33.4596 4.95094 32.6782 4.63044 31.811C4.35695 31.1078 4.02882 30.0449 3.94305 28.0994C3.84904 25.9896 3.82584 25.3565 3.82584 20.0195C3.82584 14.6824 3.84904 14.0417 3.94305 11.9399C4.02882 9.98639 4.35695 8.93149 4.63044 8.22823C4.95094 7.36075 5.45885 6.57172 6.13098 5.93072C6.7793 5.26653 7.5607 4.75862 8.42818 4.43843C9.13144 4.16494 10.1943 3.83681 12.1398 3.75073C14.2496 3.65703 14.8827 3.63352 20.2194 3.63352C25.5644 3.63352 26.1972 3.65703 28.2993 3.75073C30.2528 3.83681 31.3077 4.16494 32.011 4.43843C32.8782 4.75862 33.6675 5.26653 34.3082 5.93072C34.9724 6.57935 35.4803 7.36075 35.8008 8.22823C36.0743 8.93149 36.4024 9.99402 36.4885 11.9399C36.5822 14.0497 36.6057 14.6824 36.6057 20.0195C36.6057 25.3565 36.5822 25.9816 36.4885 28.0914Z"
+                  fill="white" />
+                <path
+                  d="M20.2039 9.72845C14.5311 9.72845 9.92847 14.3308 9.92847 20.0039C9.92847 25.677 14.5311 30.2793 20.2039 30.2793C25.877 30.2793 30.4794 25.677 30.4794 20.0039C30.4794 14.3308 25.877 9.72845 20.2039 9.72845ZM20.2039 26.6693C16.5237 26.6693 13.5385 23.6844 13.5385 20.0039C13.5385 16.3234 16.5237 13.3385 20.2039 13.3385C23.8844 13.3385 26.8693 16.3234 26.8693 20.0039C26.8693 23.6844 23.8844 26.6693 20.2039 26.6693Z"
+                  fill="white" />
+                <path
+                  d="M33.2846 9.32218C33.2846 10.6469 32.2104 11.721 30.8854 11.721C29.5607 11.721 28.4866 10.6469 28.4866 9.32218C28.4866 7.99716 29.5607 6.92334 30.8854 6.92334C32.2104 6.92334 33.2846 7.99716 33.2846 9.32218Z"
+                  fill="white" />
+              </g>
+              <defs>
+                <clipPath id="clip0_13_2392">
+                  <rect width="40" height="40" fill="white" transform="translate(0.129639)" />
+                </clipPath>
+              </defs>
+            </svg>
+
+
+          </a>
+        </div>
+      </div>
+
+    </footer>
+  </footer>
 </body>
 
 </html>
+      
+      
+
+
